@@ -1,5 +1,5 @@
 export function HelloWorldApp() {
   return (
-    <h1>HwlloWorldapp</h1>
+    <h1>HelloWorldapp</h1>
   )
 }
