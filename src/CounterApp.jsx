@@ -9,6 +9,14 @@ export const CounterApp = ({ value }) => {
         setCounter( c => c + 1 )
     }
 
+    const handleSubstract = () => {
+        setCounter( c => c + -1 )
+    }
+
+    const handlereset = () => {
+        setCounter( value )
+    }
+
     return (
         <>
             <h1>CounterApp</h1>
@@ -16,6 +24,13 @@ export const CounterApp = ({ value }) => {
             <button onClick={ handleAdd }>
                 +1
             </button>
+            <button onClick={ handleSubstract }>
+                -1
+            </button>
+            <button onClick={ handlereset }>
+                Reset
+            </button>
+            
         </>
     )
 }
